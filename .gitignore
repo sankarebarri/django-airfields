@@ -1,0 +1,76 @@
+# --- Python & Django build/cache files ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Environment and virtualenvs ---
+.env
+.venv/
+venv/
+env/
+*.env
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# --- Django specific ---
+db.sqlite3
+*.log
+*.pot
+*.mo
+
+# --- Compiled / temporary files ---
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+dist/
+build/
+develop-eggs/
+.eggs/
+wheels/
+.DS_Store
+
+# --- IDEs and editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# --- OS & misc files ---
+Thumbs.db
+.DS_Store
+*.tmp
+*~
+
+# --- Migrations (optional if you want a clean repo for package) ---
+# Uncomment next line if you don’t want to include migrations in your package
+*/migrations/
+
+# --- Testing ---
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+*.cover
+*.log
+nosetests.xml
+coverage.xml
+test_*.py
+
+# --- Documentation builds ---
+docs/_build/
+site/
+
+# --- Wheel / packaging metadata ---
+MANIFEST
+*.tar.gz
+*.zip
+
+# --- Local dev stuff ---
+# ignore test project entirely if ever copied in here
+test_*/

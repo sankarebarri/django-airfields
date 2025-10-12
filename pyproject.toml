@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-airlfields"
+version = "0.1.0"
+description = "A Django app for managing airports, runways, and airfields."
+authors = [{ name = "sankarebarri", email = "sankarebarri@yahoo.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "django>=4.2",
+]
