@@ -3,5 +3,5 @@ from airfields.models import Airfield
 
 @admin.register(Airfield)
 class AirfieldAdmin(admin.ModelAdmin):
-    list_display = ("icao_code", "name", "city", "country")
-    search_fields = ("icao_code", "iata_code", "name")
+    list_display = ("name", "icao_code", "iata_code", "city", "country", "is_international")
+    search_fields = ("name", "icao_code", "iata_code", "city", "country")
