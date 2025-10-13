@@ -9,6 +9,8 @@ class Airfield(models.Model):
     iata_code = models.CharField(max_length=3, unique=True, blank=True, null=True,  help_text='IATA code (e.g. BKO for Bamako)')
     city = models.CharField(max_length=100, help_text='City of the airfield')
     country = models.CharField(max_length=100, help_text='Country of the airfield')
+    country_code = models.CharField(max_length=2, blank=True, null=True,
+                                    help_text="ISO 3166-1 alpha-2 country code, e.g., ML for Mali")
     elevation_ft = models.IntegerField(blank=True, null=True, help_text='Elevation above sea level in feet')
     latitude = models.FloatField(help_text='Latitude in decimal degrees')
     longitude = models.FloatField(help_text='Longitude in decimal degrees')

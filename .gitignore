@@ -74,3 +74,6 @@ MANIFEST
 # --- Local dev stuff ---
 # ignore test project entirely if ever copied in here
 test_*/
+
+
+todo
