@@ -27,7 +27,7 @@ def airfield_name(code):
 @register.simple_tag
 def airport_flag(code):
     """
-    Usage: {% airport_flag "BKO" %}
+    Usage: {% airport_flag "BKO" %} or {% airport_flag "GABS" %}
     Output: 🇲🇱 (or 🏳️ if unknown)
     """
     if not code:
