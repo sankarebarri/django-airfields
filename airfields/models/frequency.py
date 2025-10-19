@@ -16,4 +16,4 @@ class Frequency(models.Model):
         ordering = ['airfield', 'name']
 
     def __str__(self):
-        return f'{self.airfield.icao_code} {self.name} ({self.Frequency_mhz} MHz)'
+        return f'{self.airfield.icao_code} - {self.name} ({self.frequency_mhz} MHz)'
